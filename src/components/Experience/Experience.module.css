@@ -1,0 +1,138 @@
+@import "../../vars.css";
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 80px 20px;
+}
+
+.title {
+    font-size: 35px;
+    font-weight: 700;
+    color: var(--color-text);
+    margin-bottom: 50px;
+    text-align: left;
+    padding-left: 30px;
+}
+
+.content {
+    position: relative;
+}
+
+.history {
+    position: relative;
+    padding-left: 30px;
+    border-left: 2px solid var(--color-primary);
+    list-style: none;
+}
+
+.historyItem {
+    position: relative;
+    margin-bottom: 60px;
+    padding-left: 30px;
+}
+
+/* Add timeline dot */
+.historyItem::before {
+    content: '';
+    position: absolute;
+    left: -41px;
+    width: 20px;
+    height: 20px;
+    background-color: var(--color-primary);
+    border-radius: 50%;
+    border: 4px solid var(--color-bg);
+}
+
+.historyItemDetails {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    padding: 30px;
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.historyItemDetails:hover {
+    transform: translateX(10px);
+}
+
+.historyItemDetails h3 {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--color-text);
+    margin-bottom: 10px;
+}
+
+.historyItemDetails p {
+    font-size: 16px;
+    color: var(--color-text);
+    opacity: 0.8;
+    margin-bottom: 20px;
+}
+
+.historyItemDetails ul {
+    margin: 20px 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+.historyItemDetails ul li {
+    color: var(--color-text);
+    margin-bottom: 10px;
+    line-height: 1.6;
+    opacity: 0.9;
+    padding-left: 0;
+}
+
+.skills {
+    display: flex !important;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+    padding-left: 0 !important;
+    list-style: none !important;
+}
+
+.skill {
+    background: rgba(var(--color-primary-rgb), 0.1);
+    color: var(--color-primary);
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 830px) {
+    .container {
+        padding: 60px 15px;
+    }
+
+    .title {
+        font-size: 28px;
+        margin-bottom: 40px;
+    }
+
+    .historyItemDetails h3 {
+        font-size: 20px;
+    }
+
+    .historyItemDetails p {
+        font-size: 14px;
+    }
+
+    .historyItemDetails ul li {
+        font-size: 15px;
+    }
+
+    .historyItem {
+        margin-bottom: 40px;
+        padding-left: 20px;
+    }
+
+    .skill {
+        font-size: 12px;
+        padding: 4px 10px;
+    }
+}
+

@@ -1,0 +1,62 @@
+.container {
+    padding: 4rem;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: white;
+}
+
+.description {
+    font-size: 1.2rem;
+    color: #e5e5e5;
+    margin-bottom: 3rem;
+}
+
+.links {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.link {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 100px;
+    padding: 1rem 2rem;
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.link:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-3px);
+}
+
+.link i {
+    font-size: 1.5rem;
+}
+
+.icon {
+    width: 24px;  /* Adjust size as needed */
+    height: 24px;
+    object-fit: contain;
+}
+
+
+

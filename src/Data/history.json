@@ -1,0 +1,35 @@
+[
+    {
+      "role": "Software Engineer",
+      "organisation": "Medipro",
+      "startDate": "June, 2024",
+      "endDate": "September, 2024",
+      "experiences": [
+        "Crafted innovative solutions that revolutionized hospital workflows, improving efficiency and patient care. From building dynamic content management systems to streamlining data processing, my work made complex tasks faster and easier. I honed my ability to write clean, maintainable code while enhancing user experience and collaboration through clear documentation and meticulous code reviews."
+      ],
+      "skills": ["Angular", "Typescript", "C#", "Node.js"],
+      "imageSrc": "history/google.png"
+    },
+    {
+      "role": "Software Engineer Volunteer",
+      "organisation": "Sadhanapada Isha Foundation",
+      "startDate": "June, 2023",
+      "endDate": "May, 2024",
+      "experiences": [
+        "Built apps that blended purpose with impact—automating participant workflows and creating systems that bridged people and support seamlessly. Beyond engineering, I embraced leadership through cross-cultural collaboration and disciplined practices, fostering mindfulness and strategic thinking in all that I do."
+      ],
+      "skills": ["Google Apps Script", "JavaScript", "Python", "SQL", "HTML", "CSS"],
+      "imageSrc": "history/microsoft.png"
+    },
+    {
+      "role": "Software Engineer Co-op and Part-time",
+      "organisation": "SkipTheDishes",
+      "startDate": "September, 2021",
+      "endDate": "May, 2023",
+      "experiences": [
+        "Transformed user experiences by driving retention and engagement through creative features. I mastered scalable systems, efficient backend services, and operational dashboards while ensuring high-quality, optimized code. This role sharpened my ability to create meaningful solutions in a fast-paced, team-oriented environment."
+      ],
+      "skills": ["Java", "AWS", "Grafana", "Redis", "Docker", "Kubernetes", "API","Jenkins", "Terraform", "BigQuery", "SQL"],
+      "imageSrc": "history/netflix.png"
+    }
+  ]

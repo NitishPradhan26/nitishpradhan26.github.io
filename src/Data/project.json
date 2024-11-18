@@ -1,0 +1,17 @@
+[
+    {
+        "name": "CLARA: Connectiing Local Agencies and Resources Automatically",
+        "description": "An AI-powered client support platform that conducts voice-based check-ins, provides actionable task guides, and facilitates seamless collaboration to enhance efficiency and resource allocation for social workers",
+        "imageSrc": "projects/Clara.jpeg"
+    },
+    {
+        "name": "Food Allergy Tracker",
+        "description": "A mobile app built with React Native and Expo to identify allergens, log user reactions to meals, and track distress-causing ingredients, leveraging AI and data analysis for accuracy.",
+        "imageSrc": "projects/Allergy_Tracker.jpeg"
+    },
+    {
+        "name": "Restaurant Recommendations System",
+        "description": "A restaurant recommendation engine and web app prototype built with Flask and React, offering personalized suggestions and a dynamic menu, achieving high user satisfaction ratings.",
+        "imageSrc": "projects/Restaurant_recommendation.jpeg"
+    }
+]
