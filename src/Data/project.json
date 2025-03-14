@@ -1,17 +1,35 @@
 [
     {
         "name": "CLARA: Connectiing Local Agencies and Resources Automatically",
-        "description": "An AI-powered client support platform that conducts voice-based check-ins, provides actionable task guides, and facilitates seamless collaboration to enhance efficiency and resource allocation for social workers",
-        "imageSrc": "projects/Clara.jpeg"
+        "description": "A web application that helps government social services provide personalized, proactive support to clients like recovering addicts and ex-prisoners",
+        "keyFeatures": [
+            "Actionable Guidance – Uses LLM models to break down large resource documents into daily, tailored action steps for clients.",
+            "Proactive Check-ins – An AI voice agent (powered by VAPI) reaches out to clients for progress updates, helping social workers make informed decisions.",
+            "Optimized Client Support – Social workers receive actionable insights based on AI-analyzed check-in data to improve case outcomes."
+        ],
+        "imageSrc": "projects/Clara.jpeg",
+        "techStack": ["Next.js", "Python", "VAPI (AI Voice Agent)", "Together AI (LLM)"]
     },
     {
         "name": "Food Allergy Tracker",
-        "description": "A mobile app built with React Native and Expo to identify allergens, log user reactions to meals, and track distress-causing ingredients, leveraging AI and data analysis for accuracy.",
-        "imageSrc": "projects/Allergy_Tracker.jpeg"
+        "description": "AI-powered food allergen detector that helps users make informed food choices and track potential dietary distress patterns.",
+        "keyFeatures": [
+            "Allergen Detection – Take a photo of a meal, and OpenAI's API analyzes the image to generate a list of possible ingredients. Known allergens are automatically highlighted.",
+            "Real-Time Alerts – Instantly warns users about potential allergens based on their dietary preferences.",
+            "Pattern Recognition – Tracks user reactions after meals (e.g., lethargic, energetic) and identifies ingredients that may be causing distress over time."
+        ],
+        "imageSrc": "projects/Allergy_Tracker.jpeg",
+        "techStack": ["React Native", "Expo", "Supabase", "OpenAI"]
     },
     {
         "name": "Restaurant Recommendations System",
-        "description": "A restaurant recommendation engine and web app prototype built with Flask and React, offering personalized suggestions and a dynamic menu, achieving high user satisfaction ratings.",
-        "imageSrc": "projects/Restaurant_recommendation.jpeg"
+        "description": "AI-powered restaurant recommendation system that personalizes dining choices based on a user's taste preferences.",
+        "keyFeatures": [
+            "Taste Profile Matching – Builds a customer taste profile from past order history and converts their preferred cuisines into a vector.",
+            "Restaurant Flavor Analysis – Analyzes restaurant menus & customer reviews to generate a restaurant taste profile vector.",
+            "Personalized AI Recommendations – Uses the cosine similarity algorithm to match restaurants to users based on similarity scores."
+        ],
+        "imageSrc": "projects/Restaurant_recommendation.jpeg",
+        "techStack": ["Python", "Flask", "Scikit-learn", "React"]
     }
 ]

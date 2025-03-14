@@ -59,7 +59,7 @@ const data = [
 ]
 
 
-export const About = () => {
+export function About() {
     return (
         <section className={styles.container} id="about">
 
