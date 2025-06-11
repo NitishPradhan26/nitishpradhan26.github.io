@@ -88,7 +88,7 @@ export function About() {
                                 I’m a developer passionate about building impactful and scalable software solutions that enhance user experiences and solve real-world problems. My work focuses on crafting robust, high-performance applications, blending thoughtful design with innovative engineering.
                                 <br />  
                                 <br />  
-                                Currently, I’m a Software Engineer specializing in full-stack development, with expertise in frameworks like Angular, React, and Node.js. My experience spans cloud technologies, microservices architecture, and API development. I thrive on creating intuitive user interfaces and backends that are both efficient and secure, ensuring seamless end-to-end functionality.
+                                Currently, I’m a Software Engineer specializing in full-stack development, with expertise in frameworks like Angular, React, Next.js and Node.js. My experience spans cloud technologies, microservices architecture, and API development. I thrive on creating intuitive user interfaces and backends that are both efficient and secure, ensuring seamless end-to-end functionality.
                                 <br />
                                 <br />
                                 In the past, I’ve had the privilege of working across a variety of domains — from healthcare and food delivery to volunteer-driven foundations. These experiences have allowed me to design web applications that streamlined operations, reduced inefficiencies, and increased satisfaction for users and stakeholders alike. 
