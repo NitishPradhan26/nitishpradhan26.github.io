@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Resume - Nitish Pradhan</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 20px; line-height: 1.4; color: #333; }
+    .container { max-width: 800px; margin: 0 auto; }
+    .header { text-align: center; margin-bottom: 10px; }
+    .header h1 { margin: 0; font-size: 2em; }
+    .contact { margin-top: 5px; font-size: 0.9em; color: #555; }
+    .contact a { text-decoration: none; color: #555; margin: 0 5px; }
+    hr { border: none; border-top: 1px solid #ccc; margin: 15px 0; }
+    .section { margin-bottom: 16px; }
+    .section-title { font-weight: bold; text-transform: uppercase; font-size: 1.1em; margin-bottom: 4px; border-bottom: 1px solid #ddd; padding-bottom: 2px; }
+    .skills-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 6px; }
+    .skills-grid h4 { margin: 0 0 4px; font-size: 0.95em; font-weight: bold; }
+    .skills-grid p { margin: 0; font-size: 0.9em; }
+    .entry { margin-bottom: 8px; }
+    .projects ul, .experience ul { margin: 2px 0; padding-left: 16px; }
+    .entry-header { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; }
+    .entry-header .title { font-weight: bold; font-size: 0.95em; }
+    .entry-header .date { font-style: italic; font-size: 0.9em; color: #666; }
+    .education-line { margin: 4px 0; font-size: 0.9em; }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <!-- Header -->
+    <div class="header">
+      <h1>Nitish Pradhan</h1>
+      <div class="contact">
+        Software Engineer | Calgary, Canada<br>
+        +1 (403) 926-4437 • <a href="mailto:nitishpradhan99@gmail.com">nitishpradhan99@gmail.com</a> • <a href="https://www.linkedin.com/in/nitish-pradhan26/">LinkedIn</a> • <a href="https://nitishpradhan26.github.io/">Portfolio</a>
+      </div>
+    </div>
+
+    <hr>
+
+    <!-- Professional Summary -->
+    <section class="section summary">
+      <div class="section-title">Professional Summary</div>
+      <p>
+        Full-Stack Developer with 2+ years of hands-on experience building high-performance React and SAP UI5 applications. Expert in JavaScript, TypeScript, RESTful API integration, and database management (PostgreSQL, MySQL, MongoDB). Proven ability to collaborate across design and backend teams, conduct code reviews, troubleshoot complex UI/UX challenges, and deliver responsive, scalable web solutions. Seeking an onsite contract opportunity in Vancouver, BC.
+      </p>
+    </section>
+
+    <!-- Core Skills -->
+    <section class="section skills">
+      <div class="section-title">Core Skills</div>
+      <div class="skills-grid">
+        <div><h4>Languages</h4><p>JavaScript, TypeScript, Java, Python, C++, C, HTML, CSS</p></div>
+        <div><h4>Frameworks & UI</h4><p>React, SAP UI5, Next.js, Angular, Node.js</p></div>
+        <div><h4>Databases</h4><p>PostgreSQL, MySQL, MongoDB, Redis</p></div>
+        <div><h4>DevOps & Cloud</h4><p>Docker, Kubernetes, AWS (EC2, Fargate), CI/CD, Terraform</p></div>
+        <div><h4>API & Integrations</h4><p>RESTful APIs, GraphQL, Web Services</p></div>
+        <div><h4>Tooling</h4><p>Git, Jira, Bitbucket, VS Code, Grafana</p></div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section class="section experience">
+      <div class="section-title">Experience</div>
+
+      <div class="entry">
+        <div class="entry-header">
+          <span class="title">Full-Stack Engineer | DevON (Stealth) – San Francisco, CA</span>
+          <span class="date">May 2025 – June 2025</span>
+        </div>
+        <ul>
+          <li>Developed and maintained React-based chat UI and SAP UI5 components; implemented virtualization (react-virtuoso) and smart auto-scroll, boosting render performance by 50%.</li>
+          <li>Collaborated with backend engineers to integrate TypeScript-driven RESTful APIs and optimized database queries, reducing data latency by 40%.</li>
+          <li>Troubleshot cross-browser UI issues, ensuring pixel-perfect fidelity and accessibility compliance.</li>
+        </ul>
+      </div>
+
+      <div class="entry">
+        <div class="entry-header">
+          <span class="title">Software Engineer Co-op | SkipTheDishes – Calgary, Canada</span>
+          <span class="date">Sep 2021 – May 2023</span>
+        </div>
+        <ul>
+          <li>Increased customer retention by 25% through the development and maintenance of engaging features such as
+                challenges, bonuses, and rewards, leading to a 15% rise in user engagement.</li>
+          <li>Implemented distributed messaging and microservices architecture using AWS SQS and SNS, resulting in a scalable and
+                decoupled system that improved the reliability and performance of backend services.</li>
+          <li>Developed comprehensive unit tests for all functions, ensuring 100% coverage of key functionalities and reducing bugs
+                by 20%, which significantly improved overall system stability and reliability.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section projects">
+      <div class="section-title">Projects</div>
+
+      <div class="entry">
+        <div class="entry-header">
+          <span class="title">Food Allergy Tracker App</span>
+        </div>
+        <ul>
+          <li>Developed a React Native front end with TypeScript and integrated Firebase real-time database; auto-detected allergens via OpenAI API, boosting prediction accuracy by 30%.</li>
+          <li>Optimized client-side data sync to achieve 99.9% uptime under high concurrency.</li>
+        </ul>
+      </div>
+
+       <div class="entry">
+        <div class="entry-header">
+          <span class="title">Restaurant Recommendations System</span>
+        </div>
+        <ul>
+          <li>Engineered a hybrid recommendation engine (content‑based + collaborative filtering) trained on 11M past orders and 5K restaurants, delivering personalized suggestions, achieving an 9/10 average user satisfaction.</li>
+          <li>Built a React + Flask web interface to interact with the recommendation engine, featuring interactive taste‑profile visualizations that enhanced user engagement and usability.</li>
+        </ul>
+      </div>
+
+      <div class="entry">
+        <div class="entry-header">
+          <span class="title">CLARA Voice Agent</span>
+        </div>
+        <ul>
+          <li>Engineered a LLaMA-driven voice assistant on Django & Next.js; transformed user guides into actionable tasks, increasing agency response rate by 40%.</li>
+          <li>Designed UI components in React and implemented TypeScript-based state management for scalable code maintenance.</li>
+        </ul>
+      </div>
+
+      <div class="entry">
+        <div class="entry-header">
+          <span class="title">LinkedIn Extractor</span>
+        </div>
+        <ul>
+          <li>Engineered a web scraping solution using Python and BeautifulSoup to extract team member names and roles from
+                company websites, achieving 95%+ accuracy and optimizing processing speed.</li>
+          <li>Integrated SERP API to automate LinkedIn URL retrieval, delivering comprehensive team insights by matching team
+                members to their LinkedIn profiles efficiently.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Education & Certifications -->
+    <section class="section education">
+      <div class="section-title">Education & Certifications</div>
+
+      <div class="entry">
+        <div class="entry-header">
+          <span class="title">University of Calgary, Canada</span>
+          <span class="date">Sep 2018 – May 2023</span>
+        </div>
+        <p class="education-line">B.Sc. Computer Engineering – With Distinction; GPA: 3.75/4.00; Graduated with Honors</p>
+      </div>
+
+      <div class="entry">
+        <div class="entry-header">
+          <span class="title">AWS Certified Developer – Associate</span>
+          <span class="date">Expected Aug 2025</span>
+        </div>
+      </div>
+    </section>
+
+  </div>
+</body>
+</html>
