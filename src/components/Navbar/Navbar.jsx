@@ -1,39 +1,46 @@
-import React from "react";
-import { useState } from "react";
+import React, { useState } from "react";
 import styles from "./Navbar.module.css";
-import { getImageUrl } from "../../utils";
-
 
 export const Navbar = () => {
-
     const [menuOpen, setMenuOpen] = useState(false);
 
     return (
-        <nav className={styles.navbar}>
-            <a className={styles.title} > Portfolio</a>
-            <img className={styles.menuBtn}
-                 src={
-                 menuOpen
-                 ? getImageUrl("nav/closeIcon.png")
-                 : getImageUrl("nav/menuIcon.png")} alt="menu-button"
-                 onClick={() => setMenuOpen(!menuOpen)} />
-            <div className={styles.menu}>
-                <ul className={`${styles.menuItems} ${menuOpen && styles.menuOpen}`}
-                    onClick={() => setMenuOpen(false)}>
-                    <li>
-                        <a href="#about"> About </a>
-                    </li>
-                    <li>
-                        <a href="#experience"> Experience </a>
-                    </li>
-                    <li>
-                        <a href="#projects"> Projects </a>
-                    </li>
-                    <li>
-                        <a href="#contact"> Contact </a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    )
+        <header className={styles.header}>
+            <nav className={styles.nav}>
+                <div className={styles.navLeft}>
+                    <h1>Nitish Pradhan</h1>
+                </div>
+
+                {/* Burger Menu */}
+                <div className={styles.burgerMenu} onClick={() => setMenuOpen(!menuOpen)}>
+                    <div className={`${styles.burgerIcon} ${menuOpen ? styles.open : ''}`}>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+
+                {/* Navigation Links */}
+                <div className={`${styles.navRight} ${menuOpen ? styles.open : ''}`}>
+                    <ul>
+                        <li><a href="#hero" onClick={() => setMenuOpen(false)}>Home</a></li>
+                        <li><a href="#skills" onClick={() => setMenuOpen(false)}>Skills</a></li>
+                        <li><a href="#experience" onClick={() => setMenuOpen(false)}>Experience</a></li>
+                        <li><a href="#projects" onClick={() => setMenuOpen(false)}>Projects</a></li>
+                        <li><a href="#contact" onClick={() => setMenuOpen(false)}>Contact</a></li>
+                        <li>
+                            <a 
+                                href="/assets/resume/Base_Resume.html" 
+                                target="_blank" 
+                                rel="noopener noreferrer"
+                                onClick={() => setMenuOpen(false)}
+                            >
+                                Resume
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+    );
 }

@@ -8,7 +8,9 @@
             "Optimized Client Support – Social workers receive actionable insights based on AI-analyzed check-in data to improve case outcomes."
         ],
         "imageSrc": "projects/Clara.jpeg",
-        "techStack": ["Next.js", "Python", "VAPI (AI Voice Agent)", "Together AI (LLM)"]
+        "techStack": ["Next.js", "Python", "VAPI (AI Voice Agent)", "Together AI (LLM)"],
+        "githubLink": "",
+        "demoLink": ""
     },
     {
         "name": "Food Allergy Tracker",
@@ -19,7 +21,9 @@
             "Pattern Recognition – Tracks user reactions after meals (e.g., lethargic, energetic) and identifies ingredients that may be causing distress over time."
         ],
         "imageSrc": "projects/Allergy_Tracker.jpeg",
-        "techStack": ["React Native", "Expo", "Supabase", "OpenAI"]
+        "techStack": ["React Native", "Expo", "Supabase", "OpenAI"],
+        "githubLink": "",
+        "demoLink": ""
     },
     {
         "name": "Restaurant Recommendations System",
@@ -30,6 +34,8 @@
             "Personalized AI Recommendations – Uses the cosine similarity algorithm to match restaurants to users based on similarity scores."
         ],
         "imageSrc": "projects/Restaurant_recommendation.jpeg",
-        "techStack": ["Python", "Flask", "Scikit-learn", "React"]
+        "techStack": ["Python", "Flask", "Scikit-learn", "React"],
+        "githubLink": "https://github.com/NitishPradhan26/Personalized-Restaurant-Recommender",
+        "demoLink": ""
     }
 ]

@@ -1,0 +1,106 @@
+.skillsSection {
+    padding: 4rem 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.sectionHeader {
+    text-align: center;
+    margin-bottom: 3rem;
+    animation: fadeInUp 0.8s ease forwards;
+    opacity: 0;
+}
+
+.sectionHeader h2 {
+    font-family: var(--heading-font);
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.sectionHeader p {
+    color: var(--text-color);
+    max-width: 600px;
+    margin: 0.5rem auto 0 auto;
+    line-height: 1.4;
+}
+
+.skillsContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    justify-items: center;
+    animation: fadeInUp 1s ease forwards;
+    opacity: 0;
+}
+
+.skillsCard {
+    background-color: var(--light-color);
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    padding: 2rem;
+    width: 100%;
+    max-width: 500px;
+    transition: transform var(--transition-speed), box-shadow var(--transition-speed);
+}
+
+.skillsCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.skillsCard h3 {
+    font-family: var(--heading-font);
+    font-size: 1.4rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.skillsList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+}
+
+.skillItem {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 0.4rem 0.8rem;
+    font-size: 0.9rem;
+    color: var(--dark-color);
+    transition: all var(--transition-speed);
+}
+
+.skillItem:hover {
+    background-color: var(--accent-color);
+    color: #fff;
+    border-color: var(--accent-color);
+    transform: translateY(-2px);
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .skillsSection {
+        padding: 3rem 1rem;
+    }
+
+    .skillsContainer {
+        grid-template-columns: 1fr;
+    }
+
+    .skillsCard {
+        max-width: 100%;
+    }
+} 

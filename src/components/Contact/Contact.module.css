@@ -1,61 +1,173 @@
-.container {
-    padding: 4rem;
+.contactSection {
+    padding: 4rem 2rem;
+    background: var(--color-bg);
+    position: relative;
+}
+
+.sectionHeader {
     text-align: center;
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.title {
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
-    color: white;
-}
-
-.description {
-    font-size: 1.2rem;
-    color: #e5e5e5;
     margin-bottom: 3rem;
 }
 
-.links {
+.sectionHeader h2 {
+    font-family: var(--heading-font);
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.sectionHeader p {
+    color: var(--color-text);
+    font-size: 1rem;
+    max-width: 600px;
+    margin: 0 auto;
+    opacity: 0.8;
+}
+
+.contactWrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+}
+
+.contactLinks {
     display: flex;
     gap: 2rem;
     justify-content: center;
     flex-wrap: wrap;
 }
 
-.link {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    background: rgba(255, 255, 255, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 100px;
-    padding: 1rem 2rem;
-    color: white;
+.contactLink {
+    font-size: 1.1rem;
+    color: var(--color-text);
     text-decoration: none;
+    padding: 0.8rem 2rem;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 100px;
     transition: all 0.3s ease;
 }
 
-.link:hover {
-    background: rgba(255, 255, 255, 0.2);
+.contactLink:hover {
     transform: translateY(-3px);
+    background: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
-.link i {
-    font-size: 1.5rem;
+.contactLink:active {
+    transform: translateY(-1px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-.icon {
-    width: 24px;  /* Adjust size as needed */
-    height: 24px;
-    object-fit: contain;
+.contactFormBox {
+    width: 100%;
+    max-width: 600px;
+    background: var(--color-bg);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.contactForm {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.contactForm label {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.contactForm input,
+.contactForm textarea {
+    width: 100%;
+    padding: 1rem;
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    color: #333;
+    font-size: 1rem;
+    font-family: var(--font);
+}
+
+.contactForm input::placeholder,
+.contactForm textarea::placeholder {
+    color: #999;
+    font-size: 1rem;
+    font-family: var(--font);
+}
+
+.contactForm textarea {
+    resize: vertical;
+    min-height: 200px;
+}
+
+.contactForm input:focus,
+.contactForm textarea:focus {
+    outline: none;
+    border-color: #64a89d;
+    box-shadow: 0 0 0 2px rgba(100, 168, 157, 0.1);
+}
+
+.centerButton {
+    font-family: var(--font);
+    background: #64a89d;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 1rem auto 0;
+    display: block;
+    min-width: 200px;
+}
+
+.centerButton:hover {
+    background: #558b82;
+    transform: translateY(-2px);
+}
+
+.centerButton:active {
+    transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+    .contactSection {
+        padding: 3rem 1.5rem;
+    }
+
+    .contactLinks {
+        gap: 1rem;
+    }
+
+    .contactFormBox {
+        padding: 1.5rem;
+    }
+
+    .contactForm label {
+        font-size: 1.2rem;
+    }
+
+    .contactForm input,
+    .contactForm textarea,
+    .contactForm input::placeholder,
+    .contactForm textarea::placeholder {
+        font-size: 1rem;
+    }
+
+    .centerButton {
+        font-size: 1.1rem;
+        min-width: 180px;
+    }
 }
 
 

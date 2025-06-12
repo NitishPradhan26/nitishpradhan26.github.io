@@ -1,9 +1,17 @@
 @import "./vars.css";
 
 .App {
-    background-color: #04152d;
+    background-color: #fff;
     width: 100%;
-    height: 100%;
-    font-family: 'Times New Roman', Times, serif;
+    min-height: 100vh;
+    font-family: var(--body-font);
+}
+
+/* Section Divider */
+.sectionDivider {
+    margin: 3rem auto;
+    width: 60%;
+    border: none;
+    border-top: 2px solid var(--light-color);
 }
 
