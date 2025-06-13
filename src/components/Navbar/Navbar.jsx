@@ -30,7 +30,7 @@ export const Navbar = () => {
                         <li><a href="#contact" onClick={() => setMenuOpen(false)}>Contact</a></li>
                         <li>
                             <a 
-                                href="/assets/resume/Nitish_Pradhan.pdf"
+                                href="/nitishpradhan26.github.io/assets/resume/Nitish_Pradhan.pdf"
                                 target="_blank" 
                                 rel="noopener noreferrer"
                                 onClick={() => setMenuOpen(false)}
