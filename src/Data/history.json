@@ -1,4 +1,15 @@
 [
+  {
+    "role": "Full-Stack Engineer",
+    "organisation": "DevON (Stealth)",
+    "startDate": "May 2025",
+    "endDate": "June 2025",
+    "location": "San Francisco, CA",
+    "skills": ["React", "TypeScript", "RESTful APIs", "Database Optimization"],
+    "experiences": [
+        "Built a fast, responsive chat interface that elevated user experience and performance. By implementing virtualization and smart auto-scrolling, I made message rendering smoother and more efficient. Collaborated across teams to integrate TypeScript APIs and fine-tune data flow, cutting latency and boosting reliability. Focused on clean, accessible UI and cross-browser consistency, ensuring a polished experience for every user."
+    ]
+},
     {
       "role": "Software Engineer",
       "organisation": "Medipro",

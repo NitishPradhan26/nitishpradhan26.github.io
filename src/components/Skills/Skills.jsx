@@ -25,7 +25,7 @@ export const Skills = () => {
         },
         {
             title: "Tooling",
-            skills: ["Git", "Jira", "Bitbucket", "VS Code", "Grafana"]
+            skills: ["Git", "Jira", "Bitbucket", "VS Code", "Grafana", "AI", "OpenAPI"]
         }
     ];
 

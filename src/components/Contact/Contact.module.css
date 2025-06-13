@@ -1,12 +1,14 @@
 .contactSection {
-    padding: 4rem 2rem;
-    background: var(--color-bg);
-    position: relative;
+    padding: 4rem 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .sectionHeader {
     text-align: center;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
+    animation: fadeInUp 0.8s ease forwards;
+    opacity: 0;
 }
 
 .sectionHeader h2 {
@@ -17,156 +19,132 @@
 }
 
 .sectionHeader p {
-    color: var(--color-text);
-    font-size: 1rem;
+    color: var(--text-color);
     max-width: 600px;
-    margin: 0 auto;
-    opacity: 0.8;
+    margin: 0.5rem auto 0 auto;
+    line-height: 1.4;
 }
 
 .contactWrapper {
-    max-width: 1000px;
-    margin: 0 auto;
     display: flex;
-    flex-direction: column;
-    gap: 3rem;
+    justify-content: center;
     align-items: center;
+    margin-bottom: 3rem;
+    animation: fadeInUp 1s ease forwards;
+    opacity: 0;
 }
 
-.contactLinks {
+.contactIcons {
     display: flex;
     gap: 2rem;
-    justify-content: center;
+    font-size: 1.8rem;
+    color: var(--accent-color);
     flex-wrap: wrap;
+    justify-content: center;
+    transition: transform var(--transition-speed), color var(--transition-speed);
 }
 
-.contactLink {
-    font-size: 1.1rem;
-    color: var(--color-text);
-    text-decoration: none;
-    padding: 0.8rem 2rem;
-    background: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgb(8, 8, 8);
-    border-radius: 100px;
-    transition: all 0.3s ease;
+.contactIcons a {
+    color: var(--accent-color);
+    transition: transform var(--transition-speed), color var(--transition-speed);
 }
 
-.contactLink:hover {
+.contactIcons a:hover {
+    color: var(--primary-color);
     transform: translateY(-3px);
-    background: rgba(255, 255, 255, 0.2);
-    border-color: rgba(255, 255, 255, 0.5);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
-.contactLink:active {
-    transform: translateY(-1px);
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+.contactFormContainer {
+    max-width: 600px;
+    margin: 0 auto;
+    animation: fadeInUp 1.2s ease forwards;
+    opacity: 0;
+}
+
+.formText {
+    text-align: center;
+    color: var(--text-color);
+    margin-bottom: 1.5rem;
+    font-size: 16px;
+    font-weight: normal;
 }
 
 .contactFormBox {
     width: 100%;
-    max-width: 600px;
-    background: var(--color-bg);
+    background: var(--light-color);
     padding: 2rem;
     border-radius: 15px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
-.contactForm {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
+.formGroup {
+    margin-bottom: 1.5rem;
 }
 
-.contactForm label {
-    font-family: var(--heading-font);
-    color: var(--primary-color);
-    font-size: 1rem;
+.formGroup label {
+    display: block;
     margin-bottom: 0.5rem;
+    color: var(--dark-color);
+    font-weight: 500;
 }
 
-.contactForm input,
-.contactForm textarea {
+.formGroup input,
+.formGroup textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: border-color var(--transition-speed);
+}
+
+.formGroup input:focus,
+.formGroup textarea:focus {
+    outline: none;
+    border-color: var(--accent-color);
+}
+
+.submitBtn {
     width: 100%;
     padding: 1rem;
-    background: #fff;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    color: #333;
-    font-size: 1rem;
-    font-family: var(--font);
-}
-
-.contactForm input::placeholder,
-.contactForm textarea::placeholder {
-    color: #999;
-    font-size: 1rem;
-    font-family: var(--font);
-}
-
-.contactForm textarea {
-    resize: vertical;
-    min-height: 200px;
-}
-
-.contactForm input:focus,
-.contactForm textarea:focus {
-    outline: none;
-    border-color: #64a89d;
-    box-shadow: 0 0 0 2px rgba(100, 168, 157, 0.1);
-}
-
-.centerButton {
-    font-family: var(--font);
-    background: #64a89d;
+    background-color: var(--accent-color);
     color: white;
     border: none;
-    padding: 1rem 2rem;
-    border-radius: 8px;
+    border-radius: 4px;
     font-size: 1rem;
+    font-weight: 600;
     cursor: pointer;
-    transition: all 0.3s ease;
-    margin: 1rem auto 0;
-    display: block;
-    min-width: 200px;
+    transition: background-color var(--transition-speed);
 }
 
-.centerButton:hover {
-    background: #558b82;
-    transform: translateY(-2px);
+.submitBtn:hover {
+    background-color: var(--primary-color);
 }
 
-.centerButton:active {
-    transform: translateY(0);
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
+/* Responsive Design */
 @media (max-width: 768px) {
     .contactSection {
-        padding: 3rem 1.5rem;
+        padding: 3rem 1rem;
     }
 
-    .contactLinks {
-        gap: 1rem;
+    .contactIcons {
+        gap: 1.5rem;
+        font-size: 1.5rem;
     }
 
     .contactFormBox {
         padding: 1.5rem;
-    }
-
-    .contactForm label {
-        font-size: 1.2rem;
-    }
-
-    .contactForm input,
-    .contactForm textarea,
-    .contactForm input::placeholder,
-    .contactForm textarea::placeholder {
-        font-size: 1rem;
-    }
-
-    .centerButton {
-        font-size: 1.1rem;
-        min-width: 180px;
     }
 }
 

@@ -20,7 +20,7 @@ export const Experience = () => {
                             <h3>{historyItem.role}</h3>
                             <h4>{historyItem.organisation}</h4>
                             <p className={styles.expTech}>
-                                <strong>Technologies:</strong> {historyItem.skills.join(", ")}
+                                <strong>Tech Stack:</strong> {historyItem.skills.join(", ")}
                             </p>
                             {historyItem.experiences.map((experience, expIndex) => (
                                 <p key={expIndex} className={styles.expDescription}>

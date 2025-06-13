@@ -1,75 +1,44 @@
 import React from "react";
 import styles from "./Contact.module.css";
+import { getImageUrl } from "../../utils";
 
 export const Contact = () => {
     return (
         <section id="contact" className={styles.contactSection}>
             <div className={styles.sectionHeader}>
-                <h2>Contact Me</h2>
-                <p>Feel free to connect via email, LinkedIn, or GitHub.</p>
+                <h2>Contact</h2>
+                <p>Let's connect and discuss opportunities</p>
             </div>
-
             <div className={styles.contactWrapper}>
-                <div className={styles.contactLinks}>
-                    <a href="mailto:nitishpradhan99@gmail.com" 
-                       className={styles.contactLink}>
-                        Email
+                <div className={styles.contactIcons}>
+                    <a href="mailto:nitishpradhan26@gmail.com" title="Email">
+                        <i className="fas fa-envelope"></i>
                     </a>
-                    <a href="https://www.linkedin.com/in/nitish-pradhan26/" 
-                       target="_blank" 
-                       rel="noopener noreferrer"
-                       className={styles.contactLink}>
-                        LinkedIn
+                    <a href="https://www.linkedin.com/in/nitish-pradhan26/" target="_blank" rel="noopener noreferrer" title="LinkedIn">
+                        <i className="fab fa-linkedin"></i>
                     </a>
-                    <a href="https://github.com/NitishPradhan26" 
-                       target="_blank" 
-                       rel="noopener noreferrer"
-                       className={styles.contactLink}>
-                        GitHub
+                    <a href="https://github.com/nitishpradhan26" target="_blank" rel="noopener noreferrer" title="GitHub">
+                        <i className="fab fa-github"></i>
                     </a>
                 </div>
-
-                <div className={styles.contactFormBox}>
-                    <form 
-                        action="https://formsubmit.co/nitishpradhan99@gmail.com" 
-                        method="POST" 
-                        className={styles.contactForm}
-                    >
-                        {/* Disable Captcha */}
-                        <input type="hidden" name="_captcha" value="false" />
-                        
+            </div>
+            <div className={styles.contactFormContainer}>
+                <p className={styles.formText}>or send a direct message</p>
+                <form className={styles.contactFormBox}>
+                    <div className={styles.formGroup}>
                         <label htmlFor="name">Name</label>
-                        <input 
-                            type="text" 
-                            id="name" 
-                            name="name" 
-                            placeholder="Your Name" 
-                            required 
-                        />
-
+                        <input type="text" id="name" name="name" required />
+                    </div>
+                    <div className={styles.formGroup}>
                         <label htmlFor="email">Email</label>
-                        <input 
-                            type="email" 
-                            id="email" 
-                            name="email" 
-                            placeholder="Your Email" 
-                            required 
-                        />
-
+                        <input type="email" id="email" name="email" required />
+                    </div>
+                    <div className={styles.formGroup}>
                         <label htmlFor="message">Message</label>
-                        <textarea 
-                            id="message" 
-                            name="message" 
-                            placeholder="Your Message" 
-                            rows="6" 
-                            required
-                        ></textarea>
-
-                        <button type="submit" className={styles.centerButton}>
-                            Send Message
-                        </button>
-                    </form>
-                </div>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" className={styles.submitBtn}>Send Message</button>
+                </form>
             </div>
         </section>
     );

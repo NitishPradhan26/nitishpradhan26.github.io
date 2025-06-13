@@ -1,6 +1,32 @@
 [
     {
-        "name": "CLARA: Connectiing Local Agencies and Resources Automatically",
+        "name": "Personalized Restaurant Recommender",
+        "description": "AI-powered restaurant recommendation system that personalizes dining choices based on a user's taste preferences.",
+        "keyFeatures": [
+            "Taste Profile Matching – Builds a customer taste profile from past order history and converts their preferred cuisines into a vector.",
+            "Restaurant Flavor Analysis – Analyzes restaurant menus & customer reviews to generate a restaurant taste profile vector.",
+            "Personalized AI Recommendations – Uses the cosine similarity algorithm to match restaurants to users based on similarity scores."
+        ],
+        "imageSrc": "projects/Restaurant_recommendation.jpeg",
+        "techStack": ["Python", "Flask", "Scikit-learn", "React"],
+        "githubLink": "https://github.com/NitishPradhan26/Personalized-Restaurant-Recommender",
+        "demoLink": ""
+    },
+    {
+        "name": "LinkedIn Extractor",
+        "description": "A smart web scraping tool that helps job seekers, recruiters, and researchers discover and validate executive LinkedIn profiles from company websites.",
+        "keyFeatures": [
+            "Executive Detection – Automatically identifies CEOs, CTOs, Founders, and other key roles from company websites.",
+            "Accurate Name & Profile Matching – Uses Flair NER and search validation to extract names and find correct LinkedIn profiles.",
+            "Scalable Analysis – Supports both individual company lookups and bulk processing for large-scale use cases."
+        ],
+        "imageSrc": "projects/linkedin_extractor.jpeg",
+        "techStack": ["Python", "Flair NER"],
+        "githubLink": "https://github.com/NitishPradhan26/LinkedInFinder",
+        "demoLink": ""
+    },
+    {
+        "name": "CLARA",
         "description": "A web application that helps government social services provide personalized, proactive support to clients like recovering addicts and ex-prisoners",
         "keyFeatures": [
             "Actionable Guidance – Uses LLM models to break down large resource documents into daily, tailored action steps for clients.",
@@ -23,19 +49,6 @@
         "imageSrc": "projects/Allergy_Tracker.jpeg",
         "techStack": ["React Native", "Expo", "Supabase", "OpenAI"],
         "githubLink": "",
-        "demoLink": ""
-    },
-    {
-        "name": "Restaurant Recommendations System",
-        "description": "AI-powered restaurant recommendation system that personalizes dining choices based on a user's taste preferences.",
-        "keyFeatures": [
-            "Taste Profile Matching – Builds a customer taste profile from past order history and converts their preferred cuisines into a vector.",
-            "Restaurant Flavor Analysis – Analyzes restaurant menus & customer reviews to generate a restaurant taste profile vector.",
-            "Personalized AI Recommendations – Uses the cosine similarity algorithm to match restaurants to users based on similarity scores."
-        ],
-        "imageSrc": "projects/Restaurant_recommendation.jpeg",
-        "techStack": ["Python", "Flask", "Scikit-learn", "React"],
-        "githubLink": "https://github.com/NitishPradhan26/Personalized-Restaurant-Recommender",
         "demoLink": ""
     }
 ]
