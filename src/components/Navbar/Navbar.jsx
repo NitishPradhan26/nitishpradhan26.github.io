@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import styles from "./Navbar.module.css";
+import { getImageUrl } from "../../utils";
 
 export const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -30,7 +31,7 @@ export const Navbar = () => {
                         <li><a href="#contact" onClick={() => setMenuOpen(false)}>Contact</a></li>
                         <li>
                             <a 
-                                href="/nitishpradhan26.github.io/assets/resume/Nitish_Pradhan.pdf"
+                                href={getImageUrl("resume/Nitish_Pradhan.pdf")}
                                 target="_blank" 
                                 rel="noopener noreferrer"
                                 onClick={() => setMenuOpen(false)}
