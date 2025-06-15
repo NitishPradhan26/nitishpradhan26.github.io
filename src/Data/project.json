@@ -35,7 +35,7 @@
         ],
         "imageSrc": "projects/Clara.jpeg",
         "techStack": ["Next.js", "Python", "VAPI (AI Voice Agent)", "Together AI (LLM)"],
-        "githubLink": "",
+        "githubLink": "https://github.com/MaxDillon/LlamaSocialImpact",
         "demoLink": ""
     },
     {
@@ -48,7 +48,7 @@
         ],
         "imageSrc": "projects/Allergy_Tracker.jpeg",
         "techStack": ["React Native", "Expo", "Supabase", "OpenAI"],
-        "githubLink": "",
+        "githubLink": "https://github.com/NitishPradhan26/Nutritionist",
         "demoLink": ""
     }
 ]
