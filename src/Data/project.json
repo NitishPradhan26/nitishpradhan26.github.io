@@ -1,4 +1,17 @@
-[
+[   
+    {
+        "name": "Voice Tool",
+        "description": "A powerful web app that transcribes voice recordings into grammatically correct text using OpenAI’s Whisper and GPT-4, with intelligent fuzzy matching and personalized word correction.",
+        "keyFeatures": [
+            "Real-Time Transcription – Captures and transcribes voice input instantly with waveform animations and support for multiple audio formats.",
+            "AI-Powered Grammar Correction – Leverages GPT-4 to automatically fix grammar and spelling, with support for custom correction prompts.",
+            "Fuzzy Matching & Personalization – Offers smart correction suggestions using Fuse.js and allows users to customize transformations with a personal dictionary."
+        ],
+        "imageSrc": "projects/Voice_Transcription_Tool.jpeg",
+        "techStack": ["React 19", "Next.js 15", "TypeScript", "OpenAI", "Firebase"],
+        "githubLink": "https://github.com/NitishPradhan26/Voice-Tool",
+        "demoLink": "https://voice-tool-ghz4.vercel.app/"
+    },
     {
         "name": "Personalized Restaurant Recommender",
         "description": "AI-powered restaurant recommendation system that personalizes dining choices based on a user's taste preferences.",
@@ -23,19 +36,6 @@
         "imageSrc": "projects/linkedin_extractor.jpeg",
         "techStack": ["Python", "Flair NER"],
         "githubLink": "https://github.com/NitishPradhan26/LinkedInFinder",
-        "demoLink": ""
-    },
-    {
-        "name": "CLARA",
-        "description": "A web application that helps government social services provide personalized, proactive support to clients like recovering addicts and ex-prisoners",
-        "keyFeatures": [
-            "Actionable Guidance – Uses LLM models to break down large resource documents into daily, tailored action steps for clients.",
-            "Proactive Check-ins – An AI voice agent (powered by VAPI) reaches out to clients for progress updates, helping social workers make informed decisions.",
-            "Optimized Client Support – Social workers receive actionable insights based on AI-analyzed check-in data to improve case outcomes."
-        ],
-        "imageSrc": "projects/Clara.jpeg",
-        "techStack": ["Next.js", "Python", "VAPI (AI Voice Agent)", "Together AI (LLM)"],
-        "githubLink": "https://github.com/MaxDillon/LlamaSocialImpact",
         "demoLink": ""
     },
     {
