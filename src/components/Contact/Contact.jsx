@@ -11,7 +11,7 @@ export const Contact = () => {
             </div>
             <div className={styles.contactWrapper}>
                 <div className={styles.contactIcons}>
-                    <a href="mailto:nitishpradhan26@gmail.com" title="Email">
+                    <a href="mailto:nitishpradhan99@gmail.com" title="Email">
                         <i className="fas fa-envelope"></i>
                     </a>
                     <a href="https://www.linkedin.com/in/nitish-pradhan26/" target="_blank" rel="noopener noreferrer" title="LinkedIn">
