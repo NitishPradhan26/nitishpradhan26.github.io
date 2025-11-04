@@ -12,7 +12,7 @@ export const Footer = () => {
             <div className={styles.footerContent}>
                 <p>&copy; <span id="currentYear"></span> Nitish Pradhan. All Rights Reserved.</p>
                 <p>
-                    <a href="mailto:nitishpradhan26@gmail.com">nitishpradhan26@gmail.com</a>
+                    <a href="mailto:nitishpradhan99@gmail.com">nitishpradhan99@gmail.com</a>
                     &middot;
                     <a href="https://www.linkedin.com/in/nitish-pradhan26/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
                     &middot;
